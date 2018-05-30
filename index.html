@@ -1,0 +1,93 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Easy Nepali Typing - also called Nepanglish. You type in English and we convert it to Nepali - Don not confuse it with Translator. It doesn't work like that.">
+      <meta name="author" content="Min Somai">
+  
+      <title>Typali - Easy Nepali Typing</title>
+  
+      <!-- Bootstrap core CSS -->
+      <link href="bootstrap.min.css" rel="stylesheet">
+  
+      <!-- Custom styles for this template -->
+      <link href="style.css" rel="stylesheet">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    <script type="text/javascript">
+
+      // Load the Google Transliterate API
+      google.load("elements", "1", {
+            packages: "transliteration"
+          });
+
+      function onLoad() {
+        var options = {
+            sourceLanguage:
+                google.elements.transliteration.LanguageCode.ENGLISH,
+            destinationLanguage:
+                [google.elements.transliteration.LanguageCode.NEPALI],
+            shortcutKey: 'ctrl+g',
+            transliterationEnabled: true
+        };
+
+        // Create an instance on TransliterationControl with the required
+        // options.
+        var control =
+            new google.elements.transliteration.TransliterationControl(options);
+
+        // Enable transliteration in the textbox with id
+        // 'transliterateTextarea'.
+        control.makeTransliteratable(['transliterateTextarea']);
+      }
+      google.setOnLoadCallback(onLoad);
+    </script>
+  </head>
+  <body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+        <div class="container">
+          <a class="navbar-brand" href="#">Typali 2018</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+             
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Download Chrome Extension</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Page Content -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="mt-5">Typali</h1>
+              <p>सजिलो नेपाली  Typing</p>
+              <div class="form-group">
+                  <label>Mero > मेरो </label>
+                  <textarea id="transliterateTextarea" class="form-control rounded-0"  rows="10" placeholder="यहाँ लेख्नुहोस ...."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+  
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
