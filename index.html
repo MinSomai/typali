@@ -81,11 +81,19 @@
         </div>
       </section>
 
-     
-  
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCvF2hLecFpa0FW5r9STIhatABGDUfXZss",
+          authDomain: "typali-ilapyt.firebaseapp.com",
+          databaseURL: "https://typali-ilapyt.firebaseio.com",
+          projectId: "typali-ilapyt",
+          storageBucket: "",
+          messagingSenderId: "106718356992"
+        };
+        firebase.initializeApp(config);
+      </script>
   </body>
 </html>
 
