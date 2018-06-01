@@ -1,3 +1,5 @@
 # typali
 
-And the Google Transliterate is freaking dynamic. //works locally but not online. You can download the files if you want to check.
+Transliterate English Alphabet into Nepali.
+
+      for eg: "Tapaiko nam k ho ?" changes into "तपाइको नाम क हो ?"
