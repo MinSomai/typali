@@ -14,10 +14,11 @@
       <link href="style.css" rel="stylesheet">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <script type="text/javascript" src="ggmain.js">
-    </script>
-    <script type="text/javascript" src="usd.js">
-    </script>
+
+    <!-- API scripts -->
+    <script type="text/javascript" src="googleAPI.js"></script>
+    <script type="text/javascript" src="serviceBaseFunction.js"></script>
+
     <script type="text/javascript">
 
       // Load the Google Transliterate API
@@ -44,6 +45,7 @@
         // 'transliterateTextarea'.
         control.makeTransliteratable(['transliterateTextarea']);
       }
+
       google.setOnLoadCallback(onLoad);
     </script>
   </head>
@@ -58,9 +60,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-             
               <li class="nav-item active">
-                <a class="nav-link" href="#">Download Chrome Extension</a>
+                <a class="nav-link" href="#">Download Firefox Extension</a>
               </li>
             </ul>
           </div>
@@ -72,7 +73,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h1 class="mt-5">Typali</h1>
+              <h1 class="mt-4">Typali</h1>
               <p>सजिलो नेपाली  Typing</p>
               <div class="form-group">
                   <label>Mero > मेरो </label>
@@ -82,20 +83,6 @@
           </div>
         </div>
       </section>
-
-      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-      <script>
-        // Initialize Firebase
-        var config = {
-          apiKey: "AIzaSyCvF2hLecFpa0FW5r9STIhatABGDUfXZss",
-          authDomain: "typali-ilapyt.firebaseapp.com",
-          databaseURL: "https://typali-ilapyt.firebaseio.com",
-          projectId: "typali-ilapyt",
-          storageBucket: "",
-          messagingSenderId: "106718356992"
-        };
-        firebase.initializeApp(config);
-      </script>
   </body>
 </html>
 

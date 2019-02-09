@@ -5,7 +5,8 @@ if(!window['googleLT_']){window['googleLT_']=(new Date()).getTime();}if (!window
     }
     if (!window['google']['loader']) {
     window['google']['loader'] = {};
-    google.loader.ServiceBase = 'usd.js';
+    //below is the edited JS file
+    google.loader.ServiceBase = 'serviceBaseFunction.js';
     google.loader.GoogleApisBase = 'https://ajax.googleapis.com/ajax';
     google.loader.ApiKey = 'notsupplied';
     google.loader.KeyVerified = true;
