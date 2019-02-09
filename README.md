@@ -5,7 +5,6 @@ Transliterate English Alphabet into Nepali.
       for eg: "Tapaiko nam k ho ?" changes into "तपाइको नाम क हो ?"
       
 
-## You need to manually install the extension
-*Official link coming soon* 
+## Download from Firefox marketplace 
 
-[Download Extension Files for Firefox](https://github.com/MinSomai/typali---Firefox-Extension)
+[Official Link](https://addons.mozilla.org/en-US/firefox/addon/typali-english-to-devanagari/)
