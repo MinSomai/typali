@@ -1,0 +1,23 @@
+{
+  "name": "Typali - Nepanglish to Devanagari",
+  "description": "Type in nepali-English and hit space to get convert it to BarhaKhari/Devanagari.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/typaliSmall.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/typaliBig.png",
+    "default_title": "Type in Nepali-English & hit space to convert it in Devanagari.",
+    "default_popup": "popup/transliteration.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+L"
+      },
+      "description": "Language Transliteration - Type in your own language"
+    }
+  }
+}
+
